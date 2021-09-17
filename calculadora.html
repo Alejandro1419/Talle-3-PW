@@ -2,6 +2,9 @@
 <head>
     <title>LetStudy</title>
     <link rel="stylesheet" type="text/CSS" href="CSS/calc.css" media="screen"/>
+    <link type="text/css" rel="stylesheet" href="/calc.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="principal-bar">
@@ -11,5 +14,33 @@
             <li><a href="grafic.html">Graficadora</a></li>
         </ul>
     </div>
+     <div id="xD">
+       <form name="calculadora">
+            <input type="textfield" name="resp" value="" autocomplete="off" readonly>
+                <br>
+                <input type="reset" value="clean" onclick="document.calculadora.resp.value+=''">
+                <input type="button" value="/" onclick="document.calculadora.resp.value+='/'">
+                <input type="button" value="*" onclick="document.calculadora.resp.value+='*'">
+                <br>
+                <input type="button" value="7" onclick="document.calculadora.resp.value+='7'">
+                <input type="button" value="8" onclick="document.calculadora.resp.value+='8'">
+                <input type="button" value="9" onclick="document.calculadora.resp.value+='9'">
+                <input type="button" value="-" onclick="document.calculadora.resp.value+='-'">
+                <br>
+                <input type="button" value="4" onclick="document.calculadora.resp.value+='4'">
+                <input type="button" value="5" onclick="document.calculadora.resp.value+='5'">
+                <input type="button" value="6" onclick="document.calculadora.resp.value+='6'">
+                <input type="button" value="+" onclick="document.calculadora.resp.value+='+'">
+                <br>
+                <input type="button" value="1" onclick="document.calculadora.resp.value+='1'">
+                <input type="button" value="2" onclick="document.calculadora.resp.value+='2'">
+                <input type="button" value="3" onclick="document.calculadora.resp.value+='3'">
+                <br>
+                <input type="button" value="0" onclick="document.calculadora.resp.value+='0'">
+                <input type="button" value="." onclick="document.calculadora.resp.value+='.'">
+                <input type="button" value="enter" onclick="document.calculadora.resp.value=eval(document.calculadora.resp.value)">
+
+       </form>
+   </div>
 </body>
 </html>
