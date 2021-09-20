@@ -108,10 +108,10 @@ linea.onclick = function(a){
         var myChart = new Chart(ctx,{
           type: 'bar',
           data:{
-            labels: arra2,
+            labels: arra1,
             datasets:[{
               label:'',
-              data: arra1,
+              data: arra2,
               backgroundcolor:barColors,
               bordercolor: barColors,
               borderwidth: 1
