@@ -7,23 +7,23 @@ var torta=document.getElementById("torta")
 var linea=document.getElementById("linea")
 var barra=document.getElementById("barra")
 
-torta.onclick = function(e){
-  graficar.onclick = function(e){
-  let valor=document.getElementById("data").value;
-  let etiqueta=document.getElementById("label").value;
-  let arr1 = etiqueta.split(',');
-  let arr2 = valor.split(',');
-  console.log(arr2);
-  console.log(arr1);
+torta.onclick = function(a){
+  graficar.onclick = function(a){
+  let data1=document.getElementById("data").value;
+  let data2=document.getElementById("label").value;
+  let arra1 = data2.split(',');
+  let arra2 = data1.split(',');
+  console.log(arra2);
+  console.log(arra1);
   var ctx = document.getElementById('myChart');
   var myChart = new Chart(ctx,{
     type: 'doughnut',
     data: {
-      labels: arr1,
+      labels: arra1,
       datasets: [{
           axis: 'x',
           label:'valores',
-          data: arr2,
+          data: arra2,
           backgroundcolor: [
             'rgba(255, 99, 132, 0.2)',
              'rgba(54,162,235,0.2)',
@@ -54,23 +54,23 @@ torta.onclick = function(e){
   });
 }
 }
-linea.onclick = function(e){
-  graficar.onclick = function(e){
-    let valor=document.getElementById("data").value;
-    let etiqueta=document.getElementById("label").value;
-    let arr1 = etiqueta.split(',');
-    let arr2 = valor.split(',');
-    console.log(arr2);
-    console.log(arr1);
+linea.onclick = function(a){
+  graficar.onclick = function(a){
+    let data1=document.getElementById("data").value;
+    let data2=document.getElementById("label").value;
+    let arra1 = data1.split(',');
+    let arra2 = data2.split(',');
+    console.log(arra2);
+    console.log(arra1);
     var ctx = document.getElementById('myChart');
     var myChart = new Chart(ctx,{
       type : 'line',
       data: {
-        labels: arr2,
+        labels: arra2,
         datasets: [{
           axis: 'y',
-          label: 'curva',
-           data:arr1,
+          label: 'grafica',
+           data:arra1,
            backgroundcolor:[
              'rgba(255, 99, 132, 0.2)',
              'rgba(54,162,235,0.2)',
@@ -103,22 +103,22 @@ linea.onclick = function(e){
   }
 }
 
-  barra.onclick = function(e){
-      graficar.onclick = function(e){
-        let valor=document.getElementById("data").value;
-        let etiqueta=document.getElementById("label").value;
-        let arr1 = etiqueta.split(',');
-        let arr2 = valor.split(',');
-        console.log(arr2);
-        console.log(arr1);
+  barra.onclick = function(a){
+      graficar.onclick = function(a){
+        let data1=document.getElementById("data").value;
+        let data2=document.getElementById("label").value;
+        let arra1 = data2.split(',');
+        let arra2 = data1.split(',');
+        console.log(arra2);
+        console.log(arra1);
         var ctx = document.getElementById('myChart');
         var myChart = new Chart(ctx,{
           type: 'bar',
           data:{
-            labels: arr2,
+            labels: arra2,
             datasets:[{
               label:'',
-              data: arr1,
+              data: arra1,
               backgroundcolor:[
                 'rgba(255, 99, 132, 0.2)',
              'rgba(54,162,235,0.2)',
