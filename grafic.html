@@ -1,75 +1,43 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>LetStudy</title>
     <link rel="stylesheet" type="text/CSS" href="CSS/graf.css" media="screen"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js"></script>
+    
 </head>
-<body>
+<body > 
     <div class="principal-bar">
         <h1>Let'Study</h1><br><br>
         <ul class="nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="calculadora.html">Calculadora</a></li>
         </ul>
-    </div>
-    <div class="body">
-    <form id="valGrafic">
-      <label>Introduzca las etiquetas del grafico</label>
-      <input id="etiqueta" type="text" name="xValues[]" value=""><br>
-      <label>Introduzca los valores las etiquetas</label>
-      <input id="datos" type="text" name="yValues[]" value=""></input><br>
-      <button id="press" onclick="myData()">Graficar</button>
-    </form>
-    <div id="grafic">
-    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
   </div>
-    <script>
-      function myData(){
-
-        document.getElementById("valGrafic").addEventListener("submit", genGrafic, false);
-      }
-
-  
-      
-      
-      function genGrafic(){
-        var tags = document.getElementById("etiqueta").getElementById;
-        var info = document.getElementById("datos").getElementById;
-        
-        var genGrafic = [tags];
-        xValues.push(genGrafic)
-
-        var genGrafic = [info];
-        yValues.push(genGrafic)
-      }
-        var xValues = ["Never", "Gonna", "Give", "You", "Up"];
-        var yValues = [30, 25, 20, 15, 10];
-        var barColors = [
-        "#b91d47",
-        "#00aba9",
-        "#2b5797",
-        "#e8c3b9",
-        "#1e7145"
-    ];
-
-new Chart("myChart", {
-  type: "pie",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {
-    title: {
-      display: true,
-      text: "World Wide Wine Production 2018"
-    }
-  }
-});
-      
-</script>
+  <div class="form-registro">
+    <h1>graficadora</h1>
+    <div>
+      <label class="x" for="name">data</label>
+      <input class="controls" name="nombre" id="data" placeholder="ingrese sus datos" type="text">
+    </div>
+    <div>
+      <label class="y" for="last name">labels</label>
+      <input class="controls" name="nombre" id="label" placeholder="ingrese sus datos" type="text">
+    </div>
+    <div>
+      <button class="boton1" id="torta">torta</button>
+      <button class="boton1" id="linea">linea</button>
+      <button class="boton1" id="barra">barra</button>
+    </div>
+ <div>
+   <button class="boton1" id="graficar">graficadora</button>
+   <a class="boton1" href="grafic.html">limpiar</a>
+ </div>
+ <section class="chart">
+<div>
+<canvas id="myChart" ></canvas>
 </div>
+ </section>
+ <script src="JS/graf.js"></script>
 </body>
 </html>
