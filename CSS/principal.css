@@ -52,18 +52,19 @@ body {
   padding-bottom: 2%;
 }
 #cacl{
-  text-align: right;
-  padding-left: 25%;
   display: inline-block;
+}
+#calcs{
+  padding-left: 10px;
+}
+#graf{
+  padding-left: 23%;
 }
 #expcalc{
   display: inline-block;
   
 }
-#graf{
-  text-align: right;
-  display: inline-block;
-}
+
 #expgraf{
   display: inline-block;
 

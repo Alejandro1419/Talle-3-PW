@@ -14,30 +14,39 @@
             <li><a href="calculadora.html">Calculadora</a></li>
         </ul>
   </div>
-  <div class="formulario-registro-datos">
-    <h1>graficadora</h1>
+  <div class="body">
+    <h1>graficadora</h1><br><br>
+    
+    <div class="centrar">
+      <div id="grafstyle">
     <div>
-      <label class="x" for="x1">data</label>
-      <input class="guardar" name="nombre" id="data" placeholder="ingrese datos uwu" type="text">
+      <label class="y" for="y1"><b>Etiquetas</b></label>
+      <input class="guardar" name="nombre" id="label" placeholder="ingrese datos uwu" type="text"><br><br>
     </div>
     <div>
-      <label class="y" for="y1">labels</label>
-      <input class="guardar" name="nombre" id="label" placeholder="ingrese datos uwu" type="text">
+      <label class="x" for="x1"><b>Valores</b></label>
+      <input class="guardar" name="nombre" id="data" placeholder="ingrese datos uwu" type="text"><br><br>
     </div>
-    <div>
-      <button class="boton1" id="torta">torta</button>
-      <button class="boton1" id="linea">linea</button>
-      <button class="boton1" id="barra">barra</button>
+    <div id="options">
+      <button class="boton1" id="torta"><b>torta</b></button>
+      <button class="boton1" id="linea"><b>linea</b></button>
+      <button class="boton1" id="barra"><b>barra</b></button><br><br>
     </div>
  <div>
-   <button class="boton1" id="graficar">graficadora</button>
-   <a class="boton1" href="grafic.html">limpiar</a>
+   <button class="boton1" id="graficar"><b>Graficar</b></button>
+   <a class="boton1" href="grafic.html"><b>limpiar</b></a>
  </div>
- <section class="chart">
+</div>
+</div>
+
+<div id="centrargraf">
+ <section class="chart" id="makegraf">
 <div>
 <canvas id="myChart" ></canvas>
 </div>
  </section>
  <script src="JS/graf.js"></script>
+</div>
+</div>
 </body>
 </html>

@@ -7,6 +7,7 @@ var torta=document.getElementById("torta")
 var linea=document.getElementById("linea")
 var barra=document.getElementById("barra")
 
+
 torta.onclick = function(a){
   graficar.onclick = function(a){
   let data1=document.getElementById("data").value;
@@ -15,6 +16,13 @@ torta.onclick = function(a){
   let arra2 = data1.split(',');
   console.log(arra2);
   console.log(arra1);
+  var barColors = [
+    "#b91d47",
+    "#00aba9",
+    "#2b5797",
+    "#e8c3b9",
+    "#1e7145"
+  ];
   var ctx = document.getElementById('myChart');
   var myChart = new Chart(ctx,{
     type: 'doughnut',
@@ -24,22 +32,8 @@ torta.onclick = function(a){
           axis: 'x',
           label:'valores',
           data: arra2,
-          backgroundcolor: [
-            'rgba(255, 99, 132, 0.2)',
-             'rgba(54,162,235,0.2)',
-             'rgba(255,206,86,0.2)',
-             'rgba(75,192,192,0.2)',
-             'rgba(153,102,255,0.2)',
-             'rgba(255,159,64,0.2)'
-          ],
-          bordercolor: [
-            'rgba(255, 99, 132, 0.2)',
-             'rgba(54,162,235,0.2)',
-             'rgba(255,206,86,0.2)',
-             'rgba(75,192,192,0.2)',
-             'rgba(153,102,255,0.2)',
-             'rgba(255,159,64,0.2)'
-          ],
+          backgroundcolor: barColors,
+          bordercolor: barColors,
           borderwidth:1
       }]
 
@@ -62,6 +56,13 @@ linea.onclick = function(a){
     let arra2 = data2.split(',');
     console.log(arra2);
     console.log(arra1);
+    var barColors = [
+      "#b91d47",
+      "#00aba9",
+      "#2b5797",
+      "#e8c3b9",
+      "#1e7145"
+    ];
     var ctx = document.getElementById('myChart');
     var myChart = new Chart(ctx,{
       type : 'line',
@@ -71,23 +72,8 @@ linea.onclick = function(a){
           axis: 'y',
           label: 'grafica',
            data:arra1,
-           backgroundcolor:[
-             'rgba(255, 99, 132, 0.2)',
-             'rgba(54,162,235,0.2)',
-             'rgba(255,206,86,0.2)',
-             'rgba(75,192,192,0.2)',
-             'rgba(153,102,255,0.2)',
-             'rgba(255,159,64,0.2)'
-           ],
-            bordercolor:[
-              'rgba(255, 99, 132, 0.2)',
-             'rgba(54,162,235,0.2)',
-             'rgba(255,206,86,0.2)',
-             'rgba(75,192,192,0.2)',
-             'rgba(153,102,255,0.2)',
-             'rgba(255,159,64,0.2)'
-
-            ],
+           backgroundcolor: barColors,
+            bordercolor:barColors,
             borderwith:1
         }]
       },
@@ -111,6 +97,13 @@ linea.onclick = function(a){
         let arra2 = data1.split(',');
         console.log(arra2);
         console.log(arra1);
+        var barColors = [
+          "#b91d47",
+          "#00aba9",
+          "#2b5797",
+          "#e8c3b9",
+          "#1e7145"
+        ];
         var ctx = document.getElementById('myChart');
         var myChart = new Chart(ctx,{
           type: 'bar',
@@ -119,23 +112,8 @@ linea.onclick = function(a){
             datasets:[{
               label:'',
               data: arra1,
-              backgroundcolor:[
-                'rgba(255, 99, 132, 0.2)',
-             'rgba(54,162,235,0.2)',
-             'rgba(255,206,86,0.2)',
-             'rgba(75,192,192,0.2)',
-             'rgba(153,102,255,0.2)',
-             'rgba(255,159,64,0.2)'
-              ],
-              bordercolor:[
-                'rgba(255, 99, 132, 0.2)',
-               'rgba(54,162,235,0.2)',
-               'rgba(255,206,86,0.2)',
-               'rgba(75,192,192,0.2)',
-               'rgba(153,102,255,0.2)',
-               'rgba(255,159,64,0.2)'
-  
-              ],
+              backgroundcolor:barColors,
+              bordercolor: barColors,
               borderwidth: 1
             }]
           },

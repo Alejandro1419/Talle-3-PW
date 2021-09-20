@@ -45,3 +45,43 @@ body {
   margin: 20px;
   padding-bottom: 200px;
 }
+.centrar{
+  padding-left: 40%;
+
+}
+#grafstyle{
+  background-color: rgb(255, 255, 255);
+  width: 30%;
+  border: 10px transparent;
+  padding: 10px;
+  border: 2px solid rgb(12, 53, 8);
+  border-radius: 8px;
+  margin: 20px;
+  padding-bottom: 2%;
+}
+
+button{
+  text-decoration: none;
+  color:black;
+  border:solid 2px rgb(12, 53, 8);
+  padding:5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+#makegraf{
+  background-color: rgb(255, 255, 255);
+  width: 60%;
+  height: 50%;
+  border: 10px transparent;
+  padding: 10px;
+  border: 2px solid rgb(12, 53, 8);
+  border-radius: 8px;
+  margin: 20px;
+  padding-bottom: 2%;
+
+}
+#centrargraf{
+  padding-left: 28%;
+}
+
